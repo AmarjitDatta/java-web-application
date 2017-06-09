@@ -2,9 +2,7 @@ package utils;
 
 import objects.Person;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class InsertNewUser {
   private Person person;
@@ -19,17 +17,26 @@ public class InsertNewUser {
     String query = "insert into persons (email, lastName, firstName, address1, address2, city, state, zipcode, phone)"
         + " values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
-    PreparedStatement preparedStatement = connection.prepareStatement(query);
-    preparedStatement.setString(1, person.getEmail());
-    preparedStatement.setString(2, person.getLastName());
-    preparedStatement.setString(3, person.getFirstName());
-    preparedStatement.setString(4, person.getAddress1());
-    preparedStatement.setString(5, person.getAddress2());
-    preparedStatement.setString(6, person.getCity());
-    preparedStatement.setString(7, person.getState());
-    preparedStatement.setInt(8, person.getZip());
-    preparedStatement.setString(9, person.getPhone());
-    preparedStatement.execute();
+    PreparedStatement insertPersonStatement = connection.prepareStatement(query);
+    insertPersonStatement.setString(1, person.getEmail());
+    insertPersonStatement.setString(2, person.getLastName());
+    insertPersonStatement.setString(3, person.getFirstName());
+    insertPersonStatement.setString(4, person.getAddress1());
+    insertPersonStatement.setString(5, person.getAddress2());
+    insertPersonStatement.setString(6, person.getCity());
+    insertPersonStatement.setString(7, person.getState());
+    insertPersonStatement.setInt(8, person.getZip());
+    insertPersonStatement.setString(9, person.getPhone());
+    insertPersonStatement.execute();
+
+    /*Generate password and store that*/
+    String query2 = "insert into person_passwd (PersonID, Email, PassWd)"
+        + " values (LAST_INSERT_ID(), ?, ?)";
+
+    PreparedStatement insertPasswordStatement = connection.prepareStatement(query2);
+    insertPasswordStatement.setString(1, person.getEmail());
+    insertPasswordStatement.setString(2, person.getPassword());
+    insertPasswordStatement.execute();
 
     return true;
   }

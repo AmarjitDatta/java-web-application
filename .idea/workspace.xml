@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7e81c4-a119-4e01-9fad-214ef080936d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/objects/Person.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SimpleLoginProject_war_exploded/WEB-INF/classes/servlets/RegistrationServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SimpleLoginProject_war_exploded/WEB-INF/classes/servlets/RegistrationServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SimpleLoginProject_war_exploded/WEB-INF/classes/utils/DBConnection.class" afterPath="$PROJECT_DIR$/out/artifacts/SimpleLoginProject_war_exploded/WEB-INF/classes/utils/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/RegistrationServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/DBConnection.class" afterPath="$PROJECT_DIR$/target/classes/utils/DBConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/utils/DBConnection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java" afterPath="$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RegistrationServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="-71">
+              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,14 +78,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertNewUser.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="InsertNewUser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1497031687789" expanded="true" signature="425:570" ph="insert into persons... " />
+                <marker date="1497034792667" expanded="true" signature="351:496" ph="insert into persons... " />
+                <marker date="1497034792667" expanded="true" signature="1220:1316" ph="insert into persons... " />
               </folding>
             </state>
           </provider>
@@ -181,6 +183,16 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>insertPassword</find>
+      <find>preparedStatement</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>insertPersonStatement</replace>
+      <replace>insertPasswordStatement</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -834,7 +846,7 @@
       <updated>1496953610828</updated>
       <workItem from="1496953612889" duration="3295000" />
       <workItem from="1497012374113" duration="15465000" />
-      <workItem from="1497029866989" duration="2112000" />
+      <workItem from="1497029866989" duration="4483000" />
     </task>
     <task id="LOCAL-00001" summary="Idea specific files">
       <created>1497030084616</created>
@@ -843,11 +855,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497030084616</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed user creation code from the main servlet code to the new InsertNewUser file.">
+      <created>1497032048461</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1497032048461</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20872000" />
+    <option name="totallyTimeSpent" value="23243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -929,7 +948,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Idea specific files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Idea specific files" />
+    <MESSAGE value="Removed user creation code from the main servlet code to the new InsertNewUser file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed user creation code from the main servlet code to the new InsertNewUser file." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1181,23 +1201,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="-71">
+          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1497031687789" expanded="true" signature="425:570" ph="insert into persons... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1497034792667" expanded="true" signature="351:496" ph="insert into persons... " />
+            <marker date="1497034792667" expanded="true" signature="1220:1316" ph="insert into persons... " />
           </folding>
         </state>
       </provider>
