@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7e81c4-a119-4e01-9fad-214ef080936d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/registrationSuccess.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SimpleLoginProject_war_exploded/WEB-INF/classes/servlets/RegistrationServlet.class" afterPath="$PROJECT_DIR$/out/artifacts/SimpleLoginProject_war_exploded/WEB-INF/classes/servlets/RegistrationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SimpleLoginProject_war_exploded/WEB-INF/classes/utils/DBConnection.class" afterPath="$PROJECT_DIR$/out/artifacts/SimpleLoginProject_war_exploded/WEB-INF/classes/utils/DBConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/servlets/RegistrationServlet.class" afterPath="$PROJECT_DIR$/target/classes/servlets/RegistrationServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/utils/DBConnection.class" afterPath="$PROJECT_DIR$/target/classes/utils/DBConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java" afterPath="$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java" afterPath="$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -58,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="71" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
+              <caret line="21" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationServlet.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RegistrationServlet.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-71">
-              <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <state relative-caret-position="782">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,11 +77,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InsertNewUser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registrationSuccess.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/registrationSuccess.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="201">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertNewUser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1497034792667" expanded="true" signature="351:496" ph="insert into persons... " />
@@ -165,16 +174,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -217,8 +216,9 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/DBResources.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/DBConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/objects/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java" />
+        <option value="$PROJECT_DIR$/web/registerSuccess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java" />
       </list>
     </option>
   </component>
@@ -265,6 +265,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java-web-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-web-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java-web-application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,6 +378,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\Personal\j2ee-web-app\java-web-application\web" />
       <recent name="C:\Development\SimpleLoginProject\web" />
     </key>
   </component>
@@ -846,7 +861,7 @@
       <updated>1496953610828</updated>
       <workItem from="1496953612889" duration="3295000" />
       <workItem from="1497012374113" duration="15465000" />
-      <workItem from="1497029866989" duration="4483000" />
+      <workItem from="1497029866989" duration="5802000" />
     </task>
     <task id="LOCAL-00001" summary="Idea specific files">
       <created>1497030084616</created>
@@ -862,11 +877,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497032048461</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Passwords can be stored in the DB now along with the user information">
+      <created>1497035020105</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1497035020105</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23243000" />
+    <option name="totallyTimeSpent" value="24562000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -949,7 +971,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Idea specific files" />
     <MESSAGE value="Removed user creation code from the main servlet code to the new InsertNewUser file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed user creation code from the main servlet code to the new InsertNewUser file." />
+    <MESSAGE value="Passwords can be stored in the DB now along with the user information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Passwords can be stored in the DB now along with the user information" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1142,16 +1165,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="71" lean-forward="false" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/objects/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -1201,24 +1214,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="12" column="18" lean-forward="true" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1497034792667" expanded="true" signature="351:496" ph="insert into persons... " />
+            <marker date="1497034792667" expanded="true" signature="1220:1316" ph="insert into persons... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/InsertNewUser.java">
+    <entry file="file://$PROJECT_DIR$/web/registrationSuccess.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="201">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/servlets/RegistrationServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1497034792667" expanded="true" signature="351:496" ph="insert into persons... " />
-            <marker date="1497034792667" expanded="true" signature="1220:1316" ph="insert into persons... " />
           </folding>
         </state>
       </provider>

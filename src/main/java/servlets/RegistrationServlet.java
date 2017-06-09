@@ -4,6 +4,7 @@ import objects.Person;
 import utils.DBConnection;
 import utils.InsertNewUser;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -42,17 +43,10 @@ public class RegistrationServlet extends HttpServlet {
     response.setCharacterEncoding("UTF-8");
 
     PrintWriter writer = response.getWriter();
-    writer.println("<!DOCTYPE html><html>");
-    writer.println("<head>");
-    writer.println("<meta charset=\"UTF-8\" />");
-    writer.println("<title>MyServlet.java:doGet(): Servlet code!</title>");
-    writer.println("</head>");
-    writer.println("<body>");
-
-    writer.println("<h1>This is the registration Servlet</h1>");
     writer.println("<h1>A new user has been created successfully!!!</h1>");
 
-    writer.println("</body>");
-    writer.println("</html>");
+    String nextJSP = "/registrationSuccess.jsp";
+    RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
+    dispatcher.forward(request,response);
   }
 }
