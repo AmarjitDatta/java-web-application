@@ -16,8 +16,6 @@ import java.sql.*;
 public class RegistrationServlet extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     Connection connection = null;
-    Statement statement = null;
-    ResultSet resultSet = null;
 
     Person person = new Person(request);
 
@@ -45,7 +43,7 @@ public class RegistrationServlet extends HttpServlet {
     PrintWriter writer = response.getWriter();
     writer.println("<h1>A new user has been created successfully!!!</h1>");
 
-    String nextJSP = "/registrationSuccess.jsp";
+    String nextJSP = "/registrationSuccess";
     RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(nextJSP);
     dispatcher.forward(request,response);
   }

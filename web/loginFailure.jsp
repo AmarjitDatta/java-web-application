@@ -9,9 +9,8 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1 class="welcome">Registration page</h1>
-      <h2 class="welcome">Registration Successful!</h2>
-      <h2 class="welcome">You can now <a href="login">Login</a> using your credentials</h2>
+      <h1 class="welcome">Login page</h1>
+      <h2 class="welcome">Login failed! Please try again.</h2>
     </div>
   </div>
 </div>
