@@ -1,9 +1,8 @@
 package servlets;
 
-import utils.DBConnection;
+import utils.mysql.DBConnection;
 
 import javax.servlet.*;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.*;
 import java.io.IOException;

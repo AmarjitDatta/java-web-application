@@ -1,7 +1,7 @@
 package servlets;
 
 import objects.Person;
-import utils.DBConnection;
+import utils.mysql.DBConnection;
 import utils.InsertNewUser;
 
 import javax.servlet.RequestDispatcher;
