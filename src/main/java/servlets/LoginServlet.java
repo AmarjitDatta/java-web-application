@@ -1,6 +1,5 @@
 package servlets;
 
-import utils.mysql.DBConnection;
 import utils.mysql.MySQLInterface;
 
 import javax.servlet.*;
@@ -8,10 +7,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 
 public class LoginServlet extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

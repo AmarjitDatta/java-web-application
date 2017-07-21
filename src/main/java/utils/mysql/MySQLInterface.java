@@ -5,13 +5,7 @@ import contents.Person;
 import java.sql.*;
 
 public class MySQLInterface {
-  private Person person;
-
-  public MySQLInterface(Person person) {
-    this.person = person;
-  }
-
-  public void createNewUser() {
+  public static void createNewUser(Person person) {
     try {
       Connection connection = DBConnection.getConnection();
       System.out.println("Database connected!");
