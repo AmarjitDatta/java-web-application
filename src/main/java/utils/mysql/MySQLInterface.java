@@ -11,7 +11,7 @@ public class MySQLInterface {
     this.person = person;
   }
 
-  public boolean createNewUser() {
+  public void createNewUser() {
     try {
       Connection connection = DBConnection.getConnection();
       System.out.println("Database connected!");
@@ -46,6 +46,28 @@ public class MySQLInterface {
     } catch (ClassNotFoundException ex) {
       throw new IllegalStateException("Could not find class!", ex);
     }
-    return true;
+  }
+
+  public static boolean findExistingUser(String email, String passwd) {
+    boolean loginSuccess = false;
+    try {
+      Connection connection = DBConnection.getConnection();
+      System.out.println("Database connected!");
+
+      Statement statement = connection.createStatement();
+      String query = "select PersonID from person_passwd where email = \"" + email + "\" and PassWd = \"" + passwd + "\"";
+      ResultSet resultSet = statement.executeQuery(query);
+      if (resultSet.next()) {
+        loginSuccess = true;
+      } else {
+        loginSuccess = false;
+      }
+      DBConnection.closeConnection();
+    } catch (SQLException e) {
+      throw new IllegalStateException("Cannot connect the database!", e);
+    } catch (ClassNotFoundException ex) {
+      throw new IllegalStateException("Could not find class!", ex);
+    }
+    return loginSuccess;
   }
 }

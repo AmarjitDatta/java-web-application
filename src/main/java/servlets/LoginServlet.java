@@ -1,6 +1,7 @@
 package servlets;
 
 import utils.mysql.DBConnection;
+import utils.mysql.MySQLInterface;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServlet;
@@ -18,29 +19,7 @@ public class LoginServlet extends HttpServlet {
     String password = request.getParameter("password");
 
     /*Check users credentials*/
-    Connection connection = null;
-    Statement statement = null;
-    ResultSet resultSet = null;
-    boolean loginSuccess = false;
-
-    try {
-      connection = DBConnection.getConnection();
-      System.out.println("Database connected!");
-
-      statement = connection.createStatement();
-      String query = "select PersonID from person_passwd where email = \"" + email + "\" and PassWd = \"" + password + "\"";
-      resultSet = statement.executeQuery(query);
-      if (resultSet.next()) {
-        loginSuccess = true;
-      } else {
-        loginSuccess = false;
-      }
-      DBConnection.closeConnection();
-    } catch (SQLException e) {
-      throw new IllegalStateException("Cannot connect the database!", e);
-    } catch (ClassNotFoundException ex) {
-      throw new IllegalStateException("Could not find class!", ex);
-    }
+    boolean loginSuccess = MySQLInterface.findExistingUser(email, password);
 
     response.setContentType("text/html");
     response.setCharacterEncoding("UTF-8");
