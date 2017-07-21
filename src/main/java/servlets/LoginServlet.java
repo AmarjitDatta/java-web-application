@@ -1,5 +1,6 @@
 package servlets;
 
+import utils.mongodb.MongoDBInterface;
 import utils.mysql.MySQLInterface;
 
 import javax.servlet.*;
@@ -14,7 +15,7 @@ public class LoginServlet extends HttpServlet {
     String password = request.getParameter("password");
 
     /*Check users credentials*/
-    boolean loginSuccess = MySQLInterface.findExistingUser(email, password);
+    boolean loginSuccess = MongoDBInterface.findExistingUser(email, password);
 
     response.setContentType("text/html");
     response.setCharacterEncoding("UTF-8");

@@ -1,6 +1,7 @@
 package servlets;
 
 import contents.Person;
+import utils.mongodb.MongoDBInterface;
 import utils.mysql.MySQLInterface;
 
 import javax.servlet.RequestDispatcher;
@@ -15,7 +16,7 @@ public class RegistrationServlet extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     Person person = new Person(request);
 
-    MySQLInterface.createNewUser(person);
+    MongoDBInterface.createNewUser(person);
 
     /*A new user has been created successfully*/
     response.setContentType("text/html");
