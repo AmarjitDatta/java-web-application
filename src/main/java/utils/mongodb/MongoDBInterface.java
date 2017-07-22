@@ -47,7 +47,7 @@ public class MongoDBInterface {
       } else {
         loginSuccess = false;
       }
-      utils.mongodb.DBConnection.closeConnection();
+      //utils.mongodb.DBConnection.closeConnection();
     } catch (Exception ex) {
       ex.printStackTrace();
     }
