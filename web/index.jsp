@@ -36,7 +36,10 @@
           <a href="#blog">Blog</a>
         </li>
         <li class="page-scroll">
-          <a href="#contact">Contact</a>
+          <a href="#login">Login</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#registration">Registration</a>
         </li>
       </ul>
     </div>
@@ -158,45 +161,54 @@
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
+<!-- Blog Section -->
+<section class="success" id="blog">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>Contact Me</h2>
+        <h2>About</h2>
+        <hr class="star-light">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-2">
+        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+      </div>
+      <div class="col-lg-4">
+        <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+      </div>
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <a href="#" class="btn btn-lg btn-outline">
+          <i class="fa fa-download"></i> Download Theme
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Login Section -->
+<section id="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Log in</h2>
         <hr class="star-primary">
       </div>
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-        <form name="sentMessage" id="contactForm" novalidate>
-          <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label for="name">Name</label>
-              <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
+        <form name="loginForm" method="post" action="/loginRequest.do" novalidate>
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label for="email">Email Address</label>
-              <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+              <input type="text" name="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label for="phone">Phone Number</label>
-              <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
-              <p class="help-block text-danger"></p>
-            </div>
-          </div>
-          <div class="row control-group">
-            <div class="form-group col-xs-12 floating-label-form-group controls">
-              <label for="message">Message</label>
-              <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" class="form-control" required data-validation-required-message="Please enter your password.">
               <p class="help-block text-danger"></p>
             </div>
           </div>
@@ -264,229 +276,6 @@
   </a>
 </div>
 
-<!-- Portfolio Modals -->
-<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="static/img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="static/img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="static/img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="static/img/portfolio/game.png" class="img-responsive img-centered" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="static/img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <div class="modal-body">
-            <h2>Project Title</h2>
-            <hr class="star-primary">
-            <img src="static/img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-            <ul class="list-inline item-details">
-              <li>Client:
-                <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                </strong>
-              </li>
-              <li>Date:
-                <strong><a href="http://startbootstrap.com">April 2014</a>
-                </strong>
-              </li>
-              <li>Service:
-                <strong><a href="http://startbootstrap.com">Web Development</a>
-                </strong>
-              </li>
-            </ul>
-            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 <jsp:include page="bodyFooter.jsp"/>
 </body>
 </html>
