@@ -11,12 +11,18 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.security.NoSuchAlgorithmException;
 
 public class RegistrationServlet extends HttpServlet {
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     Person person = new Person(request);
 
-    MongoDBInterface.createNewUser(person);
+    try {
+      MongoDBInterface.createNewUser(person);
+    }
+    catch (NoSuchAlgorithmException ex) {
+      ex.printStackTrace();
+    }
 
     /*A new user has been created successfully*/
     response.setContentType("text/html");
