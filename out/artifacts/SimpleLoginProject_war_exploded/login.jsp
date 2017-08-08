@@ -31,10 +31,6 @@
       </div>
     </div>
   </div>
-
-
-
-
   <%--Bootstrap related JS--%>
   <jsp:include page="bodyFooter.jsp"/>
 </body>

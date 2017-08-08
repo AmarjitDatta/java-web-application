@@ -187,7 +187,7 @@
 </section>
 
 <!-- Login Section -->
-<section id="login">
+<section class="login" id="login">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
