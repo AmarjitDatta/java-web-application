@@ -5,7 +5,9 @@
 <head>
   <jsp:include page="head.jsp"/>
 </head>
-<body id="page-top" class="index">
+<body class="page-index has-hero">
+  <jsp:include page="navigation.jsp"/>
+
   <jsp:include page="bodyFooter.jsp"/>
 </body>
 </html>

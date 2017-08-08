@@ -30,16 +30,16 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
 
 <!-- Bootstrap Core CSS -->
-<link href="static/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Libraries CSS Files -->
-<link href="static/css/font-awesome/font-awesome.min.css" rel="stylesheet">
-<link href="static/css/owlcarousel/owl.carousel.min.css" rel="stylesheet">
-<link href="static/css/owlcarousel/owl.theme.min.css" rel="stylesheet">
-<link href="static/css/owlcarousel/owl.transitions.min.css" rel="stylesheet">
+<link href="static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="static/lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+<link href="static/lib/owlcarousel/owl.theme.min.css" rel="stylesheet">
+<link href="static/lib/owlcarousel/owl.transitions.min.css" rel="stylesheet">
 
 <!-- Main Stylesheet File -->
-<link href="static/css/general/style.css" rel="stylesheet">
+<link href="static/css/style.css" rel="stylesheet">
 
 <!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
 <link href="#" id="colour-scheme" rel="stylesheet">
